@@ -20,7 +20,19 @@ class CustomAppBar extends StatelessWidget {
               fillColor: Theme.of(context).colorScheme.secondary,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(15),
-                borderSide: BorderSide.none)
+                borderSide: BorderSide.none,
+                ),
+                contentPadding: const EdgeInsets.symmetric(vertical: 0),   
+                prefixIcon: Icon(
+                  Icons.search_outlined,
+                  color: Theme.of(context).colorScheme.onSurface,
+                  size: 28,
+                ),
+                hintText: 'Search book here....',
+                hintStyle: TextStyle(                                                        
+                  fontSize: 18,
+                  color: Colors.grey[600],
+                )
             ),
           )),
           IconButton(
